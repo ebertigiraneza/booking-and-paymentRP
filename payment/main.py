@@ -42,7 +42,7 @@ async def payment(
         try:
             token = credentials.credentials
             booking_response = await client.get(
-                f"http://192.168.80.162:8000/booking/booking_hold/{id}",
+                f"https://booking-and-paymentrp.onrender.com/booking/booking_hold/{id}",
                 headers={"Authorization": f"Bearer {token}"},
                 timeout=5.0
             )
