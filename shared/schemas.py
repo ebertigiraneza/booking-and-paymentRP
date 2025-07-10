@@ -13,7 +13,11 @@ class WalletResponse(BaseModel):
     class Config:
         from_attributes = True
 
-
+class BalanceResponse(BaseModel):
+    address: str
+    new_balance: float
+    message: Optional[str] = "Success"     
+    
 class WalletAuth(BaseModel):
     address: str
     wallet_password: str  
