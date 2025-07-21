@@ -1,0 +1,4 @@
+[http_service]
+  internal_port = 8000  # Port principal
+  force_https = true
+  auto_stop_machines = false  # Important pour les microservices
